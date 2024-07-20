@@ -1,0 +1,163 @@
+.banner-section {
+  position: relative;
+}
+.banner-section img {
+  height: 80vh;
+  width: 100%;
+  border-radius: var(--image-border-radius);
+}
+.banner-tag {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  background: var(--primary-color);
+  padding: 40px;
+  z-index: 1;
+}
+.banner-section h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.banner-section h3 span {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--font-light);
+}
+/* ----------------------guide section------------------------- */
+.guide-section h2,
+.service-section h2,
+.other-service-section h2 {
+  border: 0;
+  border-left: 2px solid var(--primary-color);
+  padding: 8px 16px 8px 32px;
+}
+.guide-card i {
+  font-size: 26px;
+  border-radius: 100%;
+  background: var(--primary-color);
+  padding: 4px 10px;
+}
+/* ----------------------service section------------------------- */
+.service-section .left,
+.service-section .right {
+  position: relative;
+}
+.service-section .left img {
+  height: 632px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-section .right img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* ----------------------3d-section------------------------- */
+.exterior img {
+  max-height: 615px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.interior img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.exterior,
+.interior {
+  position: relative;
+}
+.exterior h3,
+.interior h3,
+.service-section .left h3,
+.service-section .right h3 {
+  position: absolute;
+  top: 22px;
+  left: 26px;
+  color: #fff;
+  font-size: 32px;
+  text-shadow: 2px 2px 35px #000000cc;
+  z-index: 1;
+}
+/* ----------------------other service section------------------------- */
+.other-service-section .card {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background: transparent;
+}
+.other-service-section .last-card {
+  height: 516px;
+}
+.other-service-section .card:hover {
+  transition: 0.3s ease-in-out;
+  background: var(--primary-color);
+}
+.other-service-section .card img {
+  position: absolute;
+  bottom: -35px;
+  right: -30px;
+  width: 250px;
+  height: 250px;
+}
+.other-service-section .card .default-img {
+  z-index: 1;
+}
+.other-service-section .card .hover-img {
+  z-index: 2;
+  opacity: 0;
+}
+.other-service-section .card:hover .hover-img {
+  transform: scale(1.2);
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.other-service-section .card:hover .default-img {
+  opacity: 0;
+}
+.other-service-section .card .typography {
+  position: relative;
+  z-index: 3;
+  width: 85%;
+}
+/* ----------------------trusted client section------------------------- */
+
+.trusted-client-section .slider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.trusted-client-section .slider-track {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 0 0 50px;
+  animation: slide 10s ease-in-out infinite;
+}
+
+.trusted-client-section .slider img {
+  width: 10%;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(-100% + 60%));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
